@@ -1,0 +1,371 @@
+<html>
+<head>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script>
+$(document).ready(function(){
+    $('body').removeClass('jsOff').addClass('jsOn');
+    $(".accordion").find('dd').hide();
+    $(".accordion").find('dt').on('click',function(){
+      $(this).toggleClass('open').next('dd').slideToggle().siblings('dd:visible').slideUp().prev('dt').removeClass('open');
+    });
+  });
+</script>
+<!--<script>
+  $(document).ready(function(){
+    $("dt").click(function(){
+      $(".pp").animate({
+          bottom:"40px"
+      });
+    });
+  });
+</script>-->
+<script>
+  $(document).ready(function(){
+  $("#an").click(function(){
+    // $(".pp").animate({
+    //   'marginTop' : "-60px",
+    //   opacity: '0.5'
+    // });
+    if(!$(".pp").hasClass("expanded")){
+      $(".pp").addClass("expanded");
+      $("#an").addClass("expanded");
+    }
+    else{
+      $(".pp").removeClass("expanded");
+      $("#an").removeClass("expanded");
+    }
+    console.log("#an clicked");
+
+    });
+
+});
+
+
+</script>
+<script>
+  $(document).ready(function(){
+  $("#bn").click(function(){
+    $(".pq").animate({
+      'marginTop' : "-60px",
+      opacity: '0.5'
+    });
+    });
+  $("#bn").click(function(){
+    $(".yo").animate({
+      'marginTop':"-55px"
+    });
+  });
+});
+</script>
+
+<!--<script>
+  $(document).ready(function(){
+  $("#cn").click(function(){
+    $(".pr").animate({
+      'marginTop' : "-60px",
+      opacity: '0.5'
+    });
+    });
+  $("#cn").click(function(){
+    $(".yl").animate({
+      'marginTop':"-55px"
+    });
+  });
+});
+</script>
+-->
+
+
+<script>
+  /*$(document).ready(function(){
+    $(".ye").hover(function(){
+      $(this).css("background-color","#898989");
+    });
+  });*/
+  $(document).ready(function(){
+  $(".ye").mouseover(function(){
+    $(this).css("background-color", "#898989");
+  });
+  $(".ye").mouseout(function(){
+    $(this).css("background-color", "#050914");
+  });
+});
+  </script>
+   <script>
+      $(document).ready(function(){
+       $(".yo").mouseover(function(){
+       $(this).css("background-color", "#898989");
+      });
+      $(".yo").mouseout(function(){
+      $(this).css("background-color", "#050914");
+  });
+});
+  </script>
+  <script>
+    $(document).ready(function(){
+  $("dd").mouseover(function(){
+    $(this).css("background-color", "grey");
+  });
+  $("dd").mouseout(function(){
+    $(this).css("background-color", "#050914");
+  });
+});
+  </script>
+  <script>
+    $(document).ready(function(){
+  $(".yl").mouseover(function(){
+    $(this).css("background-color", "#898989");
+  });
+  $(".yl").mouseout(function(){
+    $(this).css("background-color", "#050914");
+  });
+});
+  </script>
+
+
+<style>
+	
+	body{
+		background-image:url(https://damassets.autodesk.net/content/dam/autodesk/www/homepage/fy19/bam-banner-bg-1700x1016.jpg);
+		padding:0px;
+		margin:0px;
+		background-repeat:no-repeat;
+		background-size: 100% 600px;
+	}
+	.p1{
+		color:#666666;
+		font-size:21px;
+		font-weight:200;
+		font-family:Artifakt,sans-serif;
+		top:180px;
+		left:30px;
+	}
+    #p2{
+    	color:white;
+		font-size:12pt;
+		font-weight:200;
+		font-family:Artifakt,sans-serif;
+		top:180px;
+		left:30px;
+        line-height:20px;
+    }
+    .vl {
+  border-left: 2px solid #666666;
+  height: 180px;
+  position: absolute;
+  left: 30%;
+  margin-left: 2px;
+  top: 0;
+}
+  .vl2 {
+  border-left: 2px solid #666666;
+  height: 180px;
+  position: absolute;
+  left: 30%;
+  margin-left: 110px;
+  top: 0;
+}
+.po:hover{
+	font-weight:900;
+	cursor:pointer;
+}
+span:hover{
+	font-weight:600;
+}
+.jsOn .accordion dt{
+  cursor:pointer;
+}
+.accordion dd{
+  width:165px;
+  height:230px;
+  background-color:#050914;
+  opacity:0.8;
+  color:white;
+  left:-2px;
+  right:0px;
+  margin-left:2px;
+  top:4px;
+  padding:2px;
+  font-style:bold;
+}
+.jsOn .accordion dt:before{
+  content:'+';
+  margin-right:0.5em;
+  font-size:10pt;
+  font-weight:900;
+}
+.accordion dt.open:before{
+  content:'\2013';
+  font-style:bold;
+  font-weight:10pt;
+  height:2px;
+  width:40px;
+}
+.expanded{
+  margin-top: -60;
+}
+</style>
+	</head>
+	<body class="jsOff">
+    <script src="script.js"></script>
+		<div class="row">
+			<div class="col-md-6 p1" style="width:700px; height:500px; color:white;float:left;">
+                  <p style="margin-left:37px;">READY TO MAKE ANYTHING </p>
+                  <p id="p2" style="margin-left:37px;">We <sup>'</sup>ve combined our most powerful software and,<br>
+                  	services to create one simple package,for one<br>
+                    great price-Autodesk industry collections.</p>
+                  <p style="font-size:12pt; margin-left:37px;"><b>LEARN MORE</b> <b> > </b></p>
+                  <hr style="width:350px; margin-left:37px;">
+                    <i class="fa fa-arrow-circle-o-right" style="font-size:17pt;color:#0696D7; margin-left:37px;"></i>
+                    &nbsp<a href="#"style="color:#0696D7;
+            font-size:14pt;
+            font-family: Artifakt,sans-serif;
+            font-style:italic;
+            font-weight:normal;
+            text-decoration:none;
+            line-height:1px;">BAM Ireland is using AI to make<br><br>
+            &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp construction smarter, safer and <br><br><br>
+            &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp more sustainable.<br><br><br>
+            <p style="font-family:Artifakt,sans-serif; font-style:italic; font-size:11pt;left:5px;">
+            &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp <b>Read Story</b></p></a>
+            </div>
+            <div class="col-md-2 pp"  style="width:180px; height:90px; color:white;top:200px; right:5px;
+            background-color:#050914;opacity:0.7;filter:blur(0.2px);float:left;margin-right:6px;">
+              <img src="https://damassets.autodesk.net/content/dam/autodesk/www/homepage/fy18/pd-collection-white.svg" class="img-responsive" style="width:150px; height:85px;">
+            </div>
+            <div class="col-md-2 pq"  style="width:180px; height:90px; color:white;top:200px; right:5px;
+            background-color:#050914;opacity:0.7;filter:blur(0.2px);float:left;margin-right:6px;">
+              <img src="https://damassets.autodesk.net/content/dam/autodesk/www/homepage/fy18/aec-collection-white.svg" style="width:110px; height:60px;">
+            </div>
+            <div class="col-md-2 pr"  style="width:180px; height:90px; color:white;top:200px; right:5px;
+            background-color:#050914;opacity:0.7;filter:blur(0.2px);float:left;">
+              <img src="https://damassets.autodesk.net/content/dam/autodesk/www/homepage/fy18/me-collection-white.svg" class="img-responsive">
+            </div>
+
+
+            <div class="row">
+            	<div class="col-md-2 ye" style="width:180px; height:74px; color:white;top:200px; right:5px;
+            background-color:#050914;opacity:0.7;filter:blur(0.2px);float:left;margin-right:5px;margin-top:5px;">
+                <dl class="accordion" style="font-family:Artifakt,sans-serif;font-size:10pt;font-weight:normal;color:white;
+                ">
+                  <dt id="an">PRODUCT DESIGN &<br>&nbsp &nbsp MANUFACTURING <br> &nbsp &nbsp COLLECTION<br></dt>
+                  <dd style="cursor:pointer;">
+                    <span style="margin-left:7px;">Professional CAD/CAM </span> <span style="margin-left:7px;">Tools built on Inventor
+                    </span><br>
+                    <span style="margin-left:7px;">and AutoCad</span>
+                    <hr style="margin-left:2px; margin-right:2px;margin-top:13px;color:grey;">
+                    <a href="#" style="text-decoration:none;color:white;margin-top:0px;margin-left:12px; padding:0px;
+                    font-size:10pt;font-family:Artfakt,sans-serif">LEARN MORE</a>
+                    <i class="fa fa-arrow-right" style="font-size:10px; margin-left:37px;"></i>
+                    <hr style="margin-left:2px; margin-right:2px;margin-top:13px;color:grey;">
+                    <a href="#" style="text-decoration:none;color:white;margin-top:0px;margin-left:12px; padding:0px;
+                    font-size:10pt;font-family:Artfakt,sans-serif">FREE TRAIL</a>
+                    <i class="fa fa-arrow-right" style="font-size:10px; margin-left:47px; font-weight:400"></i>
+                    <hr style="margin-left:2px; margin-right:2px;margin-top:13px;color:grey;">
+                    <a href="#" style="text-decoration:none;color:white;margin-top:0px;margin-left:12px; padding:0px;
+                    font-size:10pt;font-family:Artfakt,sans-serif">SUBSCRIBE</a>
+                    <i class="fa fa-arrow-right" style="font-size:10px; margin-left:47px; font-weight:400"></i>
+                  </dd>
+                </dl>
+
+
+            	</div>
+            	<div class="col-md-2 yo" style="width:180px; height:90px; color:white;top:200px; right:5px;
+            background-color:#050914;opacity:0.7;filter:blur(0.2px);float:left;margin-right:5px;margin-top:5px;">
+            		<dl class="accordion" style="font-family:Artifakt,sans-serif;font-size:10pt;font-weight:normal;color:white;">
+                  <dt id="bn">ARCHITECTURE,<br><span style="margin:12px;">ENGINEERING &</span><br><span style="margin:12px;">CONSTRUCTION
+                  </span><br><span style="margin:12px;">COLLECTION.</span><br></dt>
+                <dd style="cursor:pointer;">
+                  <span style="margin-left:7px;">Integrated BIM tools,</span><br><span style="margin-left:7px;">including Revit</span>
+                  <br><span style="margin-left:7px;">AutoCAD and civil 3D</span>
+                  <hr style="margin-left:2px; margin-right:2px;margin-top:13px;color:grey;">
+                  <a href="#" style="text-decoration:none;color:white;margin-top:0px;margin-left:12px; padding:0px;
+                    font-size:10pt;font-family:Artfakt,sans-serif">LEARN MORE</a>
+                    <i class="fa fa-arrow-right" style="font-size:10px; margin-left:37px;"></i>
+                    <hr style="margin-left:2px; margin-right:2px;margin-top:13px;color:grey;">
+                    <a href="#" style="text-decoration:none;color:white;margin-top:0px;margin-left:12px; padding:0px;
+                    font-size:10pt;font-family:Artfakt,sans-serif">FREE TRAIL</a>
+                    <i class="fa fa-arrow-right" style="font-size:10px; margin-left:47px; font-weight:400"></i>
+                    <hr style="margin-left:2px; margin-right:2px;margin-top:13px;color:grey;">
+                    <a href="#" style="text-decoration:none;color:white;margin-top:0px;margin-left:12px; padding:0px;
+                    font-size:10pt;font-family:Artfakt,sans-serif">SUBSCRIBE</a>
+                    <i class="fa fa-arrow-right" style="font-size:10px; margin-left:47px; font-weight:400"></i>
+                </dd>  
+                </dl>
+            	</div>
+            	<div class="col-md-2 yl" style="width:180px; height:74px; color:white;top:200px; right:5px;
+            background-color:#050914;opacity:0.7;filter:blur(0.2px);float:left;margin-right:5px;margin-top:5px;">
+              <dl class="accordion" style="font-family:Artifakt,sans-serif;font-size:10pt;font-weight:normal;color:white;">
+                 <dt id="cn">MEDIA & <br><span style="margin:14px;">ENTERTAINMENT</span>
+                  <br> <span style="margin:14px;">COLLECTION</span></dt>
+                  <dd style="cursor:pointer;height:240px;>
+                    <span style="margin-left:7px;">Artistic tools for</span> <span style="margin-left:7px;">entertainment content</span><br><span style="margin-left:7px;">creation,including 3ds</span><br>
+                    <span style="margin-left:7px;">Max and Maya</span>
+                    <hr style="margin-left:2px; margin-right:2px;margin-top:13px;color:grey;">
+                  <a href="#" style="text-decoration:none;color:white;margin-top:0px;margin-left:12px; padding:0px;
+                    font-size:10pt;font-family:Artfakt,sans-serif">LEARN MORE</a>
+                    <i class="fa fa-arrow-right" style="font-size:10px; margin-left:37px;"></i>
+                    <hr style="margin-left:2px; margin-right:2px;margin-top:13px;color:grey;">
+                    <a href="#" style="text-decoration:none;color:white;margin-top:0px;margin-left:12px; padding:0px;
+                    font-size:10pt;font-family:Artfakt,sans-serif">FREE TRAIL</a>
+                    <i class="fa fa-arrow-right" style="font-size:10px; margin-left:47px; font-weight:400"></i>
+                    <hr style="margin-left:2px; margin-right:2px;margin-top:13px;color:grey;">
+                    <a href="#" style="text-decoration:none;color:white;margin-top:0px;margin-left:12px; padding:0px;
+                    font-size:10pt;font-family:Artfakt,sans-serif">SUBSCRIBE</a>
+                    <i class="fa fa-arrow-right" style="font-size:10px; margin-left:47px; font-weight:400"></i>
+                  </dd>
+               
+              </dl>
+            		
+            	</div>
+            </div>
+              <!--<div class="row text">
+              	<div class="col-md-4 po" id="pd" style="background-color:#050914; width:190px; height:23%;">
+              	
+                  <img src="https://damassets.autodesk.net/content/dam/autodesk/www/homepage/fy18/pd-collection-white.svg" class="img-responsive" style="width:150px; height:60px;">
+                  <hr style="color:#666666; width:130px;height:2px;">
+                   <p id="product2" style="color:white; font-family:Artifakt,sans-serif; font-weight:normal;
+                   margin-left:1px; padding:0px;font-size:9pt;"><span>PRODUCT DESIGN &nbsp &nbsp <b
+                   style="font-size:12pt;height:17%;">+</b>
+                   MANUFACTURING <br>COLLECTION.</span></p>
+                   <div id="panel" style="width:190px; height:23%;display:none;background-color:#050914;">
+                   	<p id="product1"style="color:white; font-family:Artifakt,sans-serif; font-weight:normal;
+                   margin-left:1px; padding:0px;font-size:9pt;">
+                   	<span style="padding:2px; width:190px; height:120px;">Professional CAD/CAM<br>tools built on Inventor<br>
+                   	and Autocad</span>
+                   	<hr style="color:white; height:1px; width:100px;">
+                   	<span id="p9">Learn More
+                   	<span style="float:left;
+                  left:120px;position: relative;"><i class="fa fa-arrow-right" style="font-size:12px"></i></span></span>
+                  <hr style="color:#666666; width:100px;height:2px;">
+                   </p>
+                   </div>
+              	</div>
+              	<div class="vl"></div>
+              	<div class="col-md-4 po" style="background-color:#050914; width:170px; height:39%; margin-left:0px;">
+              		<img src="https://damassets.autodesk.net/content/dam/autodesk/www/homepage/fy18/aec-collection-white.svg" style="width:110px; height:60px;">
+              		<hr style="color:#666666; width:149px;height:2px;">
+                    <p id="product"style="color:white; font-family:Artifakt,sans-serif; font-weight:normal;
+                   margin-left:1px; padding:0px;font-size:9pt;"><span>ARCHITECTURE, &nbsp &nbsp &nbsp<b
+                   style="font-size:12pt;">+</b>
+                   ENGINEERING & <br>CONSTRUCTION COLLECTION.<span></p>
+                   <div class="vl2"></div>
+                </div>
+                   
+              	<div class="col-md-4 po"style="background-color:#050914; width:140px; height:45%;">
+              		<img src="https://damassets.autodesk.net/content/dam/autodesk/www/homepage/fy18/me-collection-white.svg" class="img-responsive">
+              		<hr style="color:#666666; width:148px;height:2px;">
+                    <p id="product" style="color:white; font-family:Artifakt,sans-serif; font-weight:normal;
+                   margin-left:1px; padding:0px;font-size:9pt;"><span>MEDIA &  &nbsp &nbsp &nbsp<b
+                   style="font-size:12pt; position:absolute; right:-6px;">+</b>
+                   ENGINEERING & <br>CONSTRUCTION COLLECTION.</span></p>
+              	</div>-->
+            
+              </div>
+			</div>
+		</div>
+	</body>
+</html>
